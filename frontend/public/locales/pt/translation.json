@@ -1,0 +1,48 @@
+{
+  "subtitle": "Obtenha informações diurnas com um clique",
+  "footer": {
+    "powered": "Fornecido por",
+    "info": "Tempos mostrados no fuso horário local",
+    "dark": "escuro",
+    "light": "claro",
+    "lang": "en | pt"
+  },
+  "formHeader": {
+    "city": {
+      "label": "Cidade"
+    },
+    "start": {
+      "label": "data começo"
+    },
+    "end": {
+      "label": "data fim"
+    },
+    "button": "explorar",
+    "error": "Não foi possível obter informações para os parâmetros pretendidos"
+  },
+  "dataTable": {
+    "header": {
+      "day": "Dia",
+      "sunrise": "Nascer do Sol",
+      "sunset": "Pôr do Sol",
+      "goldenHour": "Hora Dourada"
+    }
+  },
+  "dataChart": {
+    "sunrise": {
+      "label": "nascer do sol"
+    },
+    "sunset": {
+      "label": "pôr do sol"
+    },
+    "goldenHour": {
+      "label": "hora dourada"
+    },
+    "yAxis": {
+      "label": "Hora"
+    },
+    "xAxis": {
+      "label": "Dia"
+    }
+  }
+}

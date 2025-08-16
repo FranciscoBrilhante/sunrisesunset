@@ -1,0 +1,50 @@
+{
+  "subtitle": "Get daytime information with one click",
+  "footer": {
+    "powered": "Powered by",
+    "info": "Times shown in the local timezone",
+    "dark": "dark",
+    "light": "light",
+    "lang": "en | pt",
+    "en": "en"
+  },
+  "formHeader": {
+    "city": {
+      "label": "City"
+    },
+    "start": {
+      "label": "start date"
+    },
+    "end": {
+      "label": "end date"
+    },
+    "button": "explore",
+    "error": "Could not fetch information for given parameters"
+  },
+  "dataTable": {
+    "header": {
+      "day": "Day",
+      "sunrise": "Sunrise",
+      "sunset": "Sunset",
+      "goldenHour": "Golden Hour"
+    }
+  },
+  "dataChart": {
+    "sunrise": {
+      "label": "sunrise"
+    },
+    "sunset": {
+      "label": "sunset"
+    },
+    "goldenHour": {
+      "label": "golden hour"
+    },
+    "yAxis": {
+      "label": "Time"
+    },
+    "xAxis": {
+      "label": "Day"
+    }
+  },
+  "prompt": "Start by selecting your city and the desired date interval."
+}

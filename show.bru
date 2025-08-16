@@ -1,0 +1,17 @@
+meta {
+  name: show
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://127.0.0.1:3000/records/show?location=lisbon&start_date=15-08-2025&end_date=15-08-2025
+  body: none
+  auth: none
+}
+
+query {
+  location: lisbon
+  start_date: 15-08-2025
+  end_date: 15-08-2025
+}

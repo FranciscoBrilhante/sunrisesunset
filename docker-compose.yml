@@ -1,0 +1,23 @@
+name: "sunrisesunset"
+
+services:
+  backend:
+    environment:
+        RAILS_MASTER_KEY: ${RAILS_MASTER_KEY}
+    build:
+      context: ./backend
+      args:
+        RAILS_MASTER_KEY: ${RAILS_MASTER_KEY}
+    restart: always
+    ports:
+      - "4000:80"
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_HOST: ${VITE_API_HOST}
+        VITE_API_PORT: ${VITE_API_PORT}
+    restart: always
+    ports:
+      - "80:80"
