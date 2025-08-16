@@ -1,4 +1,4 @@
-# Sunrite Sunset Assignement
+# Sunrite Sunset Assignment
 
 This is an implementation of the Jumpseller assignement using two components
 
