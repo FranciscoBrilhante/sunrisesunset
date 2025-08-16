@@ -1,15 +1,29 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  name_ascii: MyString
-  country: MyString
-  lat: 1.5
-  lng: 1.5
+porto:
+  name: Porto
+  name_ascii: Porto
+  country: Portugal
+  lat: 41.1495
+  lng: -8.6108
 
-two:
-  name: MyString
-  name_ascii: MyString
-  country: MyString
-  lat: 1.5
-  lng: 1.5
+lisbon:
+  name: Lisbon
+  name_ascii: Lisbon
+  country: Portugal
+  lat: 38.7122
+  lng: -9.1340
+
+lisbon_usa:
+  name: Lisbon
+  name_ascii: Lisbon
+  country: United States
+  lat: 44.0265
+  lng: -70.0900
+
+coimbra:
+  name: Coimbra
+  name_ascii: Coimbra
+  country: Portugal
+  lat: 40.2111
+  lng: -8.4289

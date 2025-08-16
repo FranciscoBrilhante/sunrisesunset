@@ -1,13 +1,7 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  lat: 1.5
-  lng: 1.5
-  date: 2025-08-14
-  data: MyString
-
-two:
-  lat: 1.5
-  lng: 1.5
-  date: 2025-08-14
-  data: MyString
+coimbra_16_08:2025:
+  lat: 40.2111
+  lng: -8.4289
+  date: 2025-08-16
+  data: "{\"id\": 17,\"date\": \"2025-08-16\", \"sunrise\": \"6:47:16 AM\", \"sunset\": \"8:31:35 PM\", \"golden_hour\": \"7:54:22 PM\"}"
