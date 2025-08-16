@@ -10,13 +10,15 @@ This is an implementation of the Jumpseller assignment using two components
 ```bash
   docker compose up -d
 ```
-To run the frontend you will need to set the following environment variables
+To run the assignment you will need to set the following environment variables.
 
-`VITE_API_HOST`
+In a real application, `RAILS_MASTER_KEY` should not be exposed like done here 😉.
 
-`VITE_API_PORT`
-
-`RAILS_MASTER_KEY`
+```bash
+  VITE_API_HOST=127.0.0.1
+  VITE_API_PORT=4000
+  RAILS_MASTER_KEY=0b30adb6f45042e69dbd3580b37f8531
+```
 
 ## Running Locally
 

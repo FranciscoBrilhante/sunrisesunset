@@ -1,24 +1,29 @@
-# README
+# Sunrite Sunset Assignement (backend)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the backend component of the Jumpseller assignement
 
-Things you may want to cover:
+## Running Locally
 
-* Ruby version
+Install dependencies
 
-* System dependencies
+```bash
+  bundle install
+```
 
-* Configuration
+Bootstrap database and populate City table with dataset in /db/worldcities by running /db/seeds.rb
 
-* Database creation
+```bash
+  rails db:reset
+```
 
-* Database initialization
+Run the development server
+```bash
+  rails server -p 4000
+```
 
-* How to run the test suite
+## Running with Docker
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
+```bash
+  docker build -t backend  .
+  docker run -d -p 4000:80 -e RAILS_MASTER_KEY=<your_key> --name backend backend```

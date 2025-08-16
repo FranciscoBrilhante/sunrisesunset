@@ -16,7 +16,7 @@ Start the dev server
   npm run start
 ```
 
-## Environment Variables
+### Environment Variables
 
 To run you will need to add the following environment variables to your .env file
 
@@ -24,3 +24,10 @@ To run you will need to add the following environment variables to your .env fil
 
 `VITE_API_PORT`
 
+## Running with Docker
+
+
+```bash
+  docker build -t frontend .
+  docker run -d -p 4000:80 --name frontend frontend
+```
