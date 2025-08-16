@@ -1,6 +1,6 @@
-# Sunrite Sunset Assignment
+# Sunrise Sunset Assignment
 
-This is an implementation of the Jumpseller assignement using two components
+This is an implementation of the Jumpseller assignment using two components
 
 - frontend React client (Vite + React)
 - backend API (Ruby on Rails)
