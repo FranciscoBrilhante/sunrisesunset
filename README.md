@@ -20,6 +20,7 @@ In a real application, `RAILS_MASTER_KEY` should not be exposed like done here ð
   RAILS_MASTER_KEY=0b30adb6f45042e69dbd3580b37f8531
 ```
 
+The application should now be available in the browser at http://localhost/
 > **_NOTE:_**  I had some issues with git adding CRLF line breaks to some scripts preventing the app from running. Make sure `/backend/bin/thrust`, `/backend/bin/ruby`, `/backend/bin/rake` and `/backend/bin/docker-entrypoint` end with LF.
 
 ## Running Locally
