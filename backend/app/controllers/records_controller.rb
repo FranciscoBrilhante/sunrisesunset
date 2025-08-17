@@ -14,7 +14,9 @@ class RecordsController < ApplicationController
 
     # lookup city coords
     # TODO leverage other API services that include more locations
-    city = City.find_by("name LIKE ?","#{params[:location]}%")
+    # city = City.find_by("name LIKE ?","#{params[:location]}%")
+    name, country = params[:location].split(",").map(&:strip)
+    city = City.where("name LIKE ? AND country LIKE ?", "#{name}%", "#{country}%").first
     if city == nil
       render json: {errors: ["city doesnt exist"]}, status: :not_found
       return

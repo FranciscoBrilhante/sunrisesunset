@@ -58,17 +58,6 @@ export const FormHeader = ({ setData }) => {
         setIsFetching(false);
     };
 
-    // when user clicks on suggestion, e will be null
-    // find selected suggestion based on label and populate input with city name
-    const cityChangeHandler = (e, newValue) => {
-        if (e) {
-            setCity(e.target.value);
-        } else {
-            const suggestion = suggestions.find((s) => s.label === newValue);
-            setCity(suggestion?.value ?? '');
-        }
-    };
-
     return (
         <Box
             sx={{
@@ -86,7 +75,7 @@ export const FormHeader = ({ setData }) => {
                 inputValue={city}
                 disableClearable
                 id="city-input"
-                onInputChange={cityChangeHandler}
+                onInputChange={(_e, newValue) => setCity(newValue)}
                 size="small"
                 freeSolo
                 disablePortal
@@ -134,7 +123,7 @@ export const FormHeader = ({ setData }) => {
             </Box>
             <Button
                 variant="contained"
-                startIcon={<SearchRounded/>}
+                startIcon={<SearchRounded />}
                 size="medium"
                 onClick={() => fetchData()}
                 disabled={city.length === 0 || startDate === null || endDate === null || isFetching}
